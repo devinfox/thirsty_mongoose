@@ -6,6 +6,11 @@ var barSchema = new Schema ({
     name: String,
     location: String,
     beers: [{type: mongoose.Schema.Types.objectId, ref: "Beer"}]
-})
+},
+    {
+        timestamps: true
+    }
+);
+
 
 module.exports = barSchema;
